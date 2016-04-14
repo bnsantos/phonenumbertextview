@@ -9,8 +9,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.bnsantos.example.MainActivity">
 
-    <TextView
+    <com.bnsantos.phonenumbertextview.PhoneNumberEditText
+        android:id="@+id/phoneNumberTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Validate and format national"
+        android:layout_below="@id/phoneNumberTextView"/>
+
+    <TextView
+        android:id="@+id/formatNational"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"/>
+
+    <TextView
+        android:id="@+id/valid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/formatNational"/>
 </RelativeLayout>
